@@ -11,7 +11,7 @@ class CsvController extends Controller implements IteratorAggregate
 {
     private $it;
 
-    public function readCsv()
+    public function readCsv() : void
     {
         $this->it = [];
 
@@ -37,6 +37,11 @@ class CsvController extends Controller implements IteratorAggregate
         }
     }
 
+    public function getArray() : array
+    {
+        return $this->it;
+    }
+    
     public function getIterator(): ArrayIterator
     {
         return new ArrayIterator($this->it);
