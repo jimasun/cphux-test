@@ -18,7 +18,3 @@ Route::get('/', function () {
 });
 
 Route::get('salary-survey', App\Http\Livewire\Csv::class);
-
-Route::get('dashboard', function () {
-    return view('dashboard');
-});
