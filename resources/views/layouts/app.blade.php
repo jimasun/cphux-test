@@ -7,7 +7,11 @@
 
     @include('layouts.includes.header')
 
-    @yield('content', 'Content not provided')
+    <div class="content">
+
+        @yield('content', 'Content not provided')
+        
+    </div>
 
     @include('layouts.includes.footer')
 
